@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<body>
+<nav th:fragment="nav" class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+    <div class="container"><a class="navbar-brand" href="/courses">🎓 Quản lý khóa học</a>
+        <div><a class="btn btn-outline-light btn-sm me-2" href="/courses">Khóa học</a><a
+                class="btn btn-outline-light btn-sm" href="/categories">Loại khóa học</a></div>
+    </div>
+</nav>
+<div th:fragment="messages">
+    <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
+    <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
+</div>
+</body>
+</html>
